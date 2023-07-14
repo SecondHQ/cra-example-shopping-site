@@ -1,6 +1,6 @@
 # react.js shopping cart
 
-example of shopping cart implemented in react.js and redux.js
+An example of shopping cart implemented in react.js and redux.js, originally from https://github.com/krzysu/reactjs-shopping-cart. 
 
 for demo [click here](http://krzysu.github.io/reactjs-shopping-cart/)
 
