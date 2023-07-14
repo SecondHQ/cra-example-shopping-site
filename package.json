@@ -1,0 +1,42 @@
+{
+  "name": "react-shop",
+  "version": "0.2.0",
+  "homepage": ".",
+  "private": true,
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.4.1",
+    "error": "10.4.0",
+    "next": "13.4.10",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "redux": "^4.2.1"
+  },
+  "scripts": {
+    "start": "next dev",
+    "start-production": "next start",
+    "build": "next build",
+    "test": "jest test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
