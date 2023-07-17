@@ -1,4 +1,3 @@
-// import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
@@ -7,6 +6,7 @@ import cartReducer from './ducks/cart';
 import productsReducer from './ducks/products';
 import App from './App';
 import productsData from './data/products';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const rootReducer = combineReducers({
     cart: cartReducer,
@@ -21,10 +21,9 @@ let store = createStore(
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() // for debugging
 );
 
-export default function NextIndexWrapper() {
-    return (
-        <Provider store={store}>
-            <App />
-        </Provider>
-    );
-}
+render(
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('root')
+);
